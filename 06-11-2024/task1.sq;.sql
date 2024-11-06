@@ -1,0 +1,10 @@
+create database shop;
+use shop;
+create table Products(ProductID int,ProductName VARCHAR(100),Category VARCHAR(50),Price decimal(10, 2));
+describe products;
+alter table products add  StockQuantity;
+alter table products drop column category;
+create table  Suppliers(supplierID int,supplierNAME varchar(100),contact varchar(15));
+describe suppliers;
+alter table suppliers modify contact varchar(20);
+drop table suppliers;
